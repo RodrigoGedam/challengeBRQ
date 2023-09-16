@@ -63,7 +63,7 @@ export default function Home() {
 				<div className="mt-12 w-full flex justify-between items-center flex-wrap gap-5">
 					<SearchBar />
 					<div className="flex justify-start flex-wrap items-center gap-2">
-						{/* <CustomFilter /> */}CustomFilter
+						<CustomFilter />
 					</div>
 				</div>
 				{carros.length > 0 ? (
