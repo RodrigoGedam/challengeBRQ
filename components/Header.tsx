@@ -4,14 +4,17 @@ import CustomButton from "./CustomButton";
 export default function Header() {
 	return (
 		<div className="flex xl:flex-row flex-col gap-5 relative z-0 max-w-[1440px] mx-auto">
-			<div className="flex-1 pt-6 sm:px-16 px-6">
+			<div className="flex-1 pt-36 sm:px-16 px-6">
 				<h1 className="2xl:text-[72px] sm:text-[64px] text-[50px] font-extrabold">
 					Ache, reserve e alugue um carro - rápido e fácil !
 				</h1>
 				<p className="text-[27px] text-black-100 font-light mt-5">
 					Melhore sua experiência ao alugar um carro.
 				</p>
-				<CustomButton title="Procure por carros" />
+				<CustomButton
+					title="Procure por carros"
+					containerStyles="hover:bg-red-400 bg-red-600 text-white rounded-full mt-10"
+				/>
 			</div>
 			<div className="xl:flex-[1.5] flex justify-end items-end w-full xl:h-screen">
 				<div className="relative xl:w-full w-[90%] xl:h-full h-[590px] z-0">
