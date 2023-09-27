@@ -1,5 +1,5 @@
 import Image from "next/image";
-import CustomButton from "./CustomButton";
+import Link from "next/link";
 
 export default function Navbar() {
 	return (
@@ -14,10 +14,12 @@ export default function Navbar() {
 						className="object-contain"
 					/>
 				</div>
-				<CustomButton
-					title="Entrar"
-					containerStyles="text-black rounded-full bg-white min-w-[130px] hover:bg-gray-100"
-				/>
+				<Link
+					href="/login"
+					className="flex flex-row relative justify-center items-center py-3 px-6 outline-none text-black rounded-full bg-white min-w-[130px] hover:bg-gray-100"
+				>
+					Entrar
+				</Link>
 			</nav>
 		</header>
 	);

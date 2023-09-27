@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 "use client";
 
 import CarCard from "@/components/CarCard";
@@ -15,12 +14,6 @@ export default function Home() {
 	const [carros, setCarros] = useState<CarState>([]);
 	const [loading, setLoading] = useState(false);
 
-	const [manufacturer, setManufacturer] = useState("");
-	const [model, setModel] = useState("");
-
-	const [fuel, setFuel] = useState("");
-	const [year, setYear] = useState(2023);
-
 	const [limit, setLimit] = useState(8);
 
 	const getCars = async () => {
@@ -28,11 +21,11 @@ export default function Home() {
 
 		try {
 			const result = await fetchCars({
-				manufacturer: manufacturer || "",
-				year: year || 2023,
-				fuel: fuel || "",
+				manufacturer: "",
+				year: 2023,
+				fuel: "",
 				limit: limit || 8,
-				model: model || "",
+				model: "",
 			});
 
 			setCarros(result);
@@ -45,7 +38,7 @@ export default function Home() {
 
 	useEffect(() => {
 		getCars();
-	}, [fuel, year, limit, manufacturer, model]);
+	}, [limit]);
 
 	return (
 		<main className="overflow-hidden">
