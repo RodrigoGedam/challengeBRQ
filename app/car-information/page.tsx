@@ -77,7 +77,7 @@ export default function Page() {
 						</div>
 					</div>
 					<button className="rounded-lg bg-indigo-400 px-2 p-1">
-						Botao
+						Acessar Contrato
 					</button>
 				</section>
 				<div className="flex flex-col bg-slate-100 gap-y-2.5 text-center text-black-100 my-4">

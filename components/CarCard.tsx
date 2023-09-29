@@ -3,6 +3,7 @@
 import { CarProps } from "@/types";
 import { calculateCarRent } from "@/utils";
 import Image from "next/image";
+import Link from "next/link";
 
 interface CarCardProps {
 	car: CarProps;
@@ -70,6 +71,14 @@ export default function CarCard({ car }: CarCardProps) {
 						<p className="text-[14px]">{city_mpg} MPG</p>
 					</div>
 				</div>
+			</div>
+			<div className="group-hover:flex w-full z-10 mt-5">
+				<Link
+					href="/car-information"
+					className="w-full py-[16px] rounded-full text-white bg-red-400 hover:bg-red-300 hover:text-gray-700 text-[14px] leading-[17px] font-bold flex flex-row relative justify-center items-center px-6 outline-none"
+				>
+					Alugar
+				</Link>
 			</div>
 		</div>
 	);
