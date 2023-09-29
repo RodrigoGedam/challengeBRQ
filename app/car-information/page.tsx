@@ -76,7 +76,7 @@ export default function Page() {
 							</p>
 						</div>
 					</div>
-					<button className="rounded-lg bg-indigo-400 px-2 p-1">
+					<button className="rounded-lg bg-indigo-400 hover:bg-indigo-300 px-2 p-1">
 						Acessar Contrato
 					</button>
 				</section>
